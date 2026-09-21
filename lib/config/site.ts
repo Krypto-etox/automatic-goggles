@@ -1,12 +1,33 @@
 /**
  * Central site configuration. Rename brand in one place.
  */
+const fallbackSiteUrl = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL.trim()}`
+  : 'http://localhost:3000';
+
+function getSiteUrl() {
+  const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  const candidate = configuredSiteUrl || fallbackSiteUrl;
+
+  try {
+    const parsedUrl = new URL(candidate);
+
+    if (parsedUrl.protocol !== 'http:' && parsedUrl.protocol !== 'https:') {
+      throw new Error('Site URL must use HTTP or HTTPS');
+    }
+
+    return parsedUrl.toString().replace(/\/$/, '');
+  } catch {
+    return 'http://localhost:3000';
+  }
+}
+
 export const siteConfig = {
   name: 'ToolNest',
   tagline: 'Every tool. One nest.',
   description:
     'A fast, privacy-first collection of free online calculators, converters, and text utilities — including Indian tax & finance tools, file converters, QR generators, and SEO tools.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
+  url: getSiteUrl(),
   ogImage: '/og.png',
   author: 'ToolNest',
   keywords: [
