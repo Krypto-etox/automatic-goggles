@@ -84,7 +84,7 @@ export async function GET(req: NextRequest) {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 22, color: '#9CA3AF' }}>
-          <span>toolnest.app</span>
+          <span>toolnest-tools.vercel.app</span>
           <span>Free · Private · No signup</span>
         </div>
       </div>

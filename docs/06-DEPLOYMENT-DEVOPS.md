@@ -16,9 +16,9 @@ Vercel (as specified). Connect GitHub repo → auto-deploy on push to `main`
 - `.env.example` committed with placeholders for anything added later
   (e.g., analytics IDs, future API keys). No secrets required for v1
   feature set.
-- `NEXT_PUBLIC_SITE_URL` — used for canonical URLs, sitemap, OG image
-  generation — set per environment (preview vs. production) in Vercel
-  dashboard.
+- `NEXT_PUBLIC_SITE_URL` — used for canonical URLs, sitemap, and OG image
+  generation. Set it to `https://toolnest-tools.vercel.app` in the Vercel
+  production environment.
 
 ## Vercel Configuration Notes
 - Function timeout: default (10s Hobby / 60s Pro) is fine for link checker

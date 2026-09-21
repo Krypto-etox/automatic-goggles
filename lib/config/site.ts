@@ -1,13 +1,11 @@
 /**
  * Central site configuration. Rename brand in one place.
  */
-const fallbackSiteUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL.trim()}`
-  : 'http://localhost:3000';
+const productionSiteUrl = 'https://toolnest-tools.vercel.app';
 
 function getSiteUrl() {
   const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  const candidate = configuredSiteUrl || fallbackSiteUrl;
+  const candidate = configuredSiteUrl || productionSiteUrl;
 
   try {
     const parsedUrl = new URL(candidate);
@@ -18,7 +16,7 @@ function getSiteUrl() {
 
     return parsedUrl.toString().replace(/\/$/, '');
   } catch {
-    return 'http://localhost:3000';
+    return productionSiteUrl;
   }
 }
 
