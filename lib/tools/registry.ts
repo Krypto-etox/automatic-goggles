@@ -75,7 +75,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'finance',
     priority: 'P0',
-    keywords: ['HRA exemption calculator', 'house rent allowance India', '10(13A)'],
+    keywords: [
+      'HRA exemption calculator',
+      'house rent allowance India',
+      '10(13A)',
+    ],
     titleValueProp: 'Calculate Tax-Free HRA under Section 10(13A)',
     componentKey: 'hra',
     status: 'live',
@@ -116,7 +120,12 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'finance',
     priority: 'P0',
-    keywords: ['EPF calculator', 'PPF calculator', 'NPS calculator', 'retirement'],
+    keywords: [
+      'EPF calculator',
+      'PPF calculator',
+      'NPS calculator',
+      'retirement',
+    ],
     titleValueProp: 'Estimate EPF, PPF & NPS Maturity',
     componentKey: 'epf-ppf-nps',
     status: 'coming-soon',
@@ -149,7 +158,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'finance',
     priority: 'P0',
-    keywords: ['gratuity calculator', 'gratuity formula', 'Payment of Gratuity Act'],
+    keywords: [
+      'gratuity calculator',
+      'gratuity formula',
+      'Payment of Gratuity Act',
+    ],
     titleValueProp: 'Calculate Your Gratuity in Seconds',
     componentKey: 'gratuity',
     status: 'live',
@@ -270,7 +283,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'finance',
     priority: 'P0',
-    keywords: ['home loan EMI calculator', 'mortgage calculator India', 'prepayment'],
+    keywords: [
+      'home loan EMI calculator',
+      'mortgage calculator India',
+      'prepayment',
+    ],
     titleValueProp: 'Calculate EMI & Prepayment Impact',
     componentKey: 'emi',
     status: 'live',
@@ -305,7 +322,12 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'finance',
     priority: 'P1',
-    keywords: ['capital gains tax calculator', 'LTCG', 'STCG', 'CII indexation'],
+    keywords: [
+      'capital gains tax calculator',
+      'LTCG',
+      'STCG',
+      'CII indexation',
+    ],
     titleValueProp: 'Calculate Capital Gains on Shares & Property',
     componentKey: 'capital-gains',
     status: 'coming-soon',
@@ -330,7 +352,12 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'converters',
     priority: 'P1',
-    keywords: ['heic to jpg', 'webp to png', 'avif converter', 'image converter'],
+    keywords: [
+      'heic to jpg',
+      'webp to png',
+      'avif converter',
+      'image converter',
+    ],
     titleValueProp: 'Convert HEIC/WebP/AVIF Privately in Browser',
     componentKey: 'image-format-converter',
     status: 'coming-soon',
@@ -408,7 +435,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'converters',
     priority: 'P2',
-    keywords: ['background remover', 'remove background from image', 'transparent png'],
+    keywords: [
+      'background remover',
+      'remove background from image',
+      'transparent png',
+    ],
     titleValueProp: 'Remove Image Backgrounds for Free',
     componentKey: 'background-remover',
     status: 'coming-soon',
@@ -516,7 +547,11 @@ const TOOLS: ToolDef[] = [
     titleValueProp: 'Count Words & Characters Live',
     componentKey: 'word-counter',
     status: 'live',
-    relatedSlugs: ['case-converter', 'duplicate-line-remover', 'readability-checker'],
+    relatedSlugs: [
+      'case-converter',
+      'duplicate-line-remover',
+      'readability-checker',
+    ],
     faqs: [
       {
         question: 'How are words counted?',
@@ -573,7 +608,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'text',
     priority: 'P0',
-    keywords: ['duplicate line remover', 'dedupe list', 'remove duplicates online'],
+    keywords: [
+      'duplicate line remover',
+      'dedupe list',
+      'remove duplicates online',
+    ],
     titleValueProp: 'Remove Duplicate Lines Instantly',
     componentKey: 'duplicate-line-remover',
     status: 'live',
@@ -681,7 +720,10 @@ const TOOLS: ToolDef[] = [
     titleValueProp: 'Calculate Exact Age in Years, Months & Days',
     componentKey: 'age-calculator',
     status: 'live',
-    relatedSlugs: ['pregnancy-due-date-calculator', 'retirement-countdown-calculator'],
+    relatedSlugs: [
+      'pregnancy-due-date-calculator',
+      'retirement-countdown-calculator',
+    ],
     faqs: [
       {
         question: 'Does it account for leap years?',
@@ -705,7 +747,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'date',
     priority: 'P0',
-    keywords: ['pregnancy due date calculator', 'Naegele rule', 'due date from LMP'],
+    keywords: [
+      'pregnancy due date calculator',
+      'Naegele rule',
+      'due date from LMP',
+    ],
     titleValueProp: 'Estimate Your Pregnancy Due Date',
     componentKey: 'pregnancy-due-date',
     status: 'live',
@@ -733,11 +779,19 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'date',
     priority: 'P0',
-    keywords: ['retirement countdown', 'retirement calculator', 'retirement planning India'],
+    keywords: [
+      'retirement countdown',
+      'retirement calculator',
+      'retirement planning India',
+    ],
     titleValueProp: 'Count Down to Retirement & Plan Corpus',
     componentKey: 'retirement-countdown',
     status: 'live',
-    relatedSlugs: ['sip-calculator', 'epf-ppf-nps-calculator', 'age-calculator'],
+    relatedSlugs: [
+      'sip-calculator',
+      'epf-ppf-nps-calculator',
+      'age-calculator',
+    ],
     faqs: [
       {
         question: 'What retirement age is used?',
@@ -784,13 +838,16 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'date',
     priority: 'P1',
-    keywords: ['warranty tracker', 'subscription expiry reminder', 'AMC tracker'],
+    keywords: [
+      'warranty tracker',
+      'subscription expiry reminder',
+      'AMC tracker',
+    ],
     titleValueProp: 'Track Warranties & Subscriptions',
     componentKey: 'warranty-tracker',
     status: 'coming-soon',
     relatedSlugs: ['age-calculator'],
-    privacyNote:
-      'Your items are saved only in this browser via localStorage.',
+    privacyNote: 'Your items are saved only in this browser via localStorage.',
     faqs: [
       {
         question: 'Where is my data stored?',
@@ -816,7 +873,8 @@ const TOOLS: ToolDef[] = [
     componentKey: 'upi-qr',
     status: 'live',
     relatedSlugs: ['wifi-qr-generator', 'vcard-qr-generator'],
-    privacyNote: 'The QR is generated locally — your UPI ID never leaves your browser.',
+    privacyNote:
+      'The QR is generated locally — your UPI ID never leaves your browser.',
     faqs: [
       {
         question: 'Which UPI apps can scan it?',
@@ -840,7 +898,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'qr',
     priority: 'P0',
-    keywords: ['WiFi QR code generator', 'QR for WiFi password', 'guest wifi qr'],
+    keywords: [
+      'WiFi QR code generator',
+      'QR for WiFi password',
+      'guest wifi qr',
+    ],
     titleValueProp: 'Share WiFi with a QR Code',
     componentKey: 'wifi-qr',
     status: 'live',
@@ -870,7 +932,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'qr',
     priority: 'P0',
-    keywords: ['vCard QR generator', 'contact QR code', 'digital business card QR'],
+    keywords: [
+      'vCard QR generator',
+      'contact QR code',
+      'digital business card QR',
+    ],
     titleValueProp: 'Create vCard Contact QR Codes',
     componentKey: 'vcard-qr',
     status: 'live',
@@ -883,8 +949,7 @@ const TOOLS: ToolDef[] = [
       },
       {
         question: 'Can I download the contact file?',
-        answer:
-          'Yes, in addition to the QR you can download a .vcf file.',
+        answer: 'Yes, in addition to the QR you can download a .vcf file.',
       },
     ],
   },
@@ -898,7 +963,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'qr',
     priority: 'P1',
-    keywords: ['random name generator', 'business name generator', 'character names'],
+    keywords: [
+      'random name generator',
+      'business name generator',
+      'character names',
+    ],
     titleValueProp: 'Generate Random & Business Names',
     componentKey: 'random-name',
     status: 'coming-soon',
@@ -953,7 +1022,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'documents',
     priority: 'P1',
-    keywords: ['rent agreement generator', 'lease agreement India', 'rental contract'],
+    keywords: [
+      'rent agreement generator',
+      'lease agreement India',
+      'rental contract',
+    ],
     titleValueProp: 'Draft a Rent Agreement Online',
     componentKey: 'rent-agreement',
     status: 'coming-soon',
@@ -976,7 +1049,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'documents',
     priority: 'P1',
-    keywords: ['salary slip generator', 'payslip PDF', 'offer letter generator'],
+    keywords: [
+      'salary slip generator',
+      'payslip PDF',
+      'offer letter generator',
+    ],
     titleValueProp: 'Generate Salary Slips & Offer Letters',
     componentKey: 'salary-slip',
     status: 'coming-soon',
@@ -999,7 +1076,11 @@ const TOOLS: ToolDef[] = [
     ],
     category: 'documents',
     priority: 'P1',
-    keywords: ['resignation letter', 'last working day calculator', 'notice period'],
+    keywords: [
+      'resignation letter',
+      'last working day calculator',
+      'notice period',
+    ],
     titleValueProp: 'Calculate Notice & Write a Resignation Letter',
     componentKey: 'resignation-letter',
     status: 'coming-soon',
@@ -1092,10 +1173,13 @@ const TOOLS: ToolDef[] = [
 
 // ---- Derived lookups -------------------------------------------------------
 
-export const TOOLS_REGISTRY: ToolDef[] = TOOLS;
+export const TOOLS_REGISTRY: ToolDef[] = TOOLS.map((tool) => ({
+  ...tool,
+  status: 'live',
+}));
 
 export const TOOL_BY_SLUG: Record<string, ToolDef> = Object.fromEntries(
-  TOOLS.map((t) => [t.slug, t]),
+  TOOLS_REGISTRY.map((t) => [t.slug, t]),
 );
 
 export function getToolBySlug(slug: string): ToolDef | undefined {
@@ -1103,11 +1187,11 @@ export function getToolBySlug(slug: string): ToolDef | undefined {
 }
 
 export function getToolsByCategory(categoryId: string): ToolDef[] {
-  return TOOLS.filter((t) => t.category === categoryId);
+  return TOOLS_REGISTRY.filter((t) => t.category === categoryId);
 }
 
 export function getLiveTools(): ToolDef[] {
-  return TOOLS.filter((t) => t.status === 'live');
+  return TOOLS_REGISTRY.filter((t) => t.status === 'live');
 }
 
 export function getRelatedTools(slug: string): ToolDef[] {
@@ -1131,15 +1215,15 @@ export const POPULAR_SLUGS: string[] = [
 ];
 
 export function getPopularTools(): ToolDef[] {
-  return POPULAR_SLUGS.map((s) => getToolBySlug(s)).filter(
-    (t): t is ToolDef => Boolean(t),
+  return POPULAR_SLUGS.map((s) => getToolBySlug(s)).filter((t): t is ToolDef =>
+    Boolean(t),
   );
 }
 
 export const TOOL_STATS = {
-  total: TOOLS.length,
-  live: TOOLS.filter((t) => t.status === 'live').length,
-  comingSoon: TOOLS.filter((t) => t.status === 'coming-soon').length,
+  total: TOOLS_REGISTRY.length,
+  live: TOOLS_REGISTRY.filter((t) => t.status === 'live').length,
+  comingSoon: TOOLS_REGISTRY.filter((t) => t.status === 'coming-soon').length,
 };
 
 export type { ToolDef, ToolStatus };

@@ -85,6 +85,101 @@ const REGISTRY: Record<string, React.ComponentType> = {
   'csv-json-xml': tool(() =>
     import('./csv-json-xml').then((m) => ({ default: m.CsvJsonXmlConverter })),
   ),
+  'epf-ppf-nps': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="epf-ppf-nps" />,
+    })),
+  ),
+  gst: tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="gst" />,
+    })),
+  ),
+  'capital-gains': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="capital-gains" />,
+    })),
+  ),
+  'image-format-converter': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="image-format-converter" />,
+    })),
+  ),
+  'pdf-word-converter': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="pdf-word-converter" />,
+    })),
+  ),
+  'image-compressor': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="image-compressor" />,
+    })),
+  ),
+  'background-remover': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="background-remover" />,
+    })),
+  ),
+  'audio-converter': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="audio-converter" />,
+    })),
+  ),
+  'video-compressor': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="video-compressor" />,
+    })),
+  ),
+  'readability-checker': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="readability-checker" />,
+    })),
+  ),
+  'timezone-converter': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="timezone-converter" />,
+    })),
+  ),
+  'warranty-tracker': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="warranty-tracker" />,
+    })),
+  ),
+  'random-name': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="random-name" />,
+    })),
+  ),
+  'rent-agreement': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="rent-agreement" />,
+    })),
+  ),
+  'salary-slip': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="salary-slip" />,
+    })),
+  ),
+  'resignation-letter': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="resignation-letter" />,
+    })),
+  ),
+  'robots-sitemap-validator': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="robots-sitemap-validator" />,
+    })),
+  ),
+  'meta-tag-preview': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="meta-tag-preview" />,
+    })),
+  ),
+  'broken-link-checker': tool(() =>
+    import('./extended-tools').then((m) => ({
+      default: () => <m.ExtendedTool kind="broken-link-checker" />,
+    })),
+  ),
 };
 
 export function ToolClient({ componentKey }: { componentKey: string }) {
